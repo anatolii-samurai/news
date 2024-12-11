@@ -9,7 +9,9 @@ const Main = () => {
   useEffect(()=>{
     const fetchNews = async ()=>{
       try {
-        const response = await getNews()
+        const response = await getNews();
+        console.log(news);
+        
         setNews(response.news);
         
       } catch (error) {
