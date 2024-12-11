@@ -10,7 +10,7 @@ const Main = () => {
     const fetchNews = async ()=>{
       try {
         const response = await getNews();
-        console.log(response.news);
+        // console.log(response.news);
         
         setNews(response.news);
         
